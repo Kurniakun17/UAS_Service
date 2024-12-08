@@ -1,6 +1,6 @@
 // src/models/barang.js
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+const sequelize = require('../../../config/database');
 
 const Barang = sequelize.define('Barang', {
   id: {
