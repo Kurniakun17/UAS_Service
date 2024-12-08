@@ -3,6 +3,7 @@ const User = require('../models/user');
 
 exports.login = async (req, res) => {
   try {
+    
     const { email, password } = req.body;
     const user = await User.findOne({ where: { email } });
 
